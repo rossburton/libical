@@ -22,7 +22,9 @@ data between two library releases.
 
 First make sure the project version in the top-level CMakeLists.txt is updated for the new release.
 
-And checkout that branch for the new release (should be branch called X.Y).
+Then checkout the target branch for the new release (should be branch called X.Y).
+
+_Note: you can also test work branches as long as their CMakeLists.txt has the correct project version._
 
 Then run:
 
@@ -31,4 +33,5 @@ Then run:
 ```
 
 The standard output will show compatibility and you can look at the web pages reported there as well.
-the comparison is stored in the compat_reports directory.
+the comparison is stored in the compat_reports directory.  Each library libical, libicalvcard, etc
+has its own compatibility report that should be reviewed individually.
